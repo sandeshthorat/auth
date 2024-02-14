@@ -5,21 +5,20 @@ import Image from 'next/image';
 export default function AcmeLogo() {
   return (
     <div
-      className={`${lusitana.className} flex flex-row items-center leading-none text-white`}
+      className={`${lusitana.className} w-full flex flex-row gap-y-4 items-start justify-start leading-none text-white`}
     >
       <Image
             src="/mah.png"
             width={100}
             height={100}
             className='hidden md:block items-center gap-5 px-1 py-3 text-sm font-medium'
-            
             alt='maharashtra logo'
           />
           <Image
             src="/mah.png"
             width={35}
             height={35}
-            className='block md:hidden items-start font-bold py-2 text-sm '
+            className='block md:hidden py-2  '
             alt='maharashtra logo'
           />
       <div className='px-7'>
