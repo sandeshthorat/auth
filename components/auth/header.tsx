@@ -2,6 +2,8 @@ import { Poppins } from "next/font/google";
 
 import { cn } from "@/lib/utils";
 import Image from "next/image";
+import Link from "next/link";
+import Sidemahlogo from "../ui/side-mah-logo";
 
 const font= Poppins({
     subsets:["latin"],
@@ -17,13 +19,13 @@ export const Header = ({
 }:headerProps) => {
     return ( 
         <div className="w-full flex flex-col gap-y-4 items-center justify-center">
-            <Image
-                src="/mah.png"
-                width={85}
-                height={85}
-                className='items-center gap-5 px-1 py-3 text-sm font-medium'
-                alt='maharashtra logo'
-          />
+            <Link
+                href="/"
+            >
+                <div className="w-32 text-white md:w-40">
+                <Sidemahlogo />
+                </div>
+            </Link>
             {/* <h1 className={cn(
                 "text-3xl first-line:font-semibold",
                 font.className,

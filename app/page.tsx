@@ -35,7 +35,7 @@ export default function Home() {
             , To proceed further login in below.
           </p>
           <Link
-            href="/login"
+            href="/auth/login"
             className="flex items-center gap-5 self-start rounded-lg bg-blue-500 px-6 py-3 text-sm font-medium text-white transition-colors hover:bg-blue-400 md:text-base"
           >
             <span>Log in</span> <ArrowRightIcon className="w-5 md:w-6" />
@@ -62,6 +62,27 @@ export default function Home() {
         </div>
       </div>
     </main>
+    // <main className="flex h-full flex-col items-center justify-center bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-sky-400 to-blue-800">
+    //   <div className="space-y-6 text-center">
+    //     <h1 className={cn(
+    //       "text-6xl font-semibold text-white drop-shadow-md",
+    //       font.className,
+    //     )}>
+    //       🔐Auth
+    //     </h1>
+    //     <p className="text-white text-lg">
+    //       A simple authentication serivce
+    //     </p>
+    //     <div>
+    //       <LoginButton>
+    //         <Button variant="secondary" size="lg">
+    //           Sign In
+    //         </Button>
+    //       </LoginButton>
+    //     </div>
+        
+    //   </div>
+    // </main>
     // <main className="flex h-full flex-col items-center justify-center bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-sky-400 to-blue-800">
     //   <div className="space-y-6 text-center">
     //     <h1 className={cn(
